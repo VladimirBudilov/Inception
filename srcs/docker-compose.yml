@@ -33,7 +33,7 @@ services:
     networks:
       - inception
     volumes:
-      - db-volume:/var/lib/mysql
+      - db-volume:/var/lib/mysql 
     restart: always
 
   wordpress:
@@ -67,5 +67,6 @@ volumes:
       device: /home/${USER}/data/mariadb
 
 networks:
-  inception:
-    driver: bridge
+    inception:
+        driver: bridge
+
